@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrekWise Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Changed -->
+<body class="bg-stone-100">
+
+    <!-- Navigation Bar -->
+    <nav class="p-5 bg-white shadow-md md:flex md:justify-between md:items-center">
+        <div class="flex justify-between items-center">
+            <span class="text-3xl font-bold cursor-pointer text-gray-800">
+                Travel<span class="text-orange-600">Bug</span> <!-- Changed -->
+            </span>
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu-outline" onclick="sidebar(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <!-- Changed -->
+            <li class="mx-4 my-5 md:my-0"><a href="#" class="text-xl hover:text-orange-600 duration-300">Home</a></li>
+            <li class="mx-4 my-5 md:my-0"><a href="#destinations" class="text-xl hover:text-orange-600 duration-300">Destinations</a></li>
+            <li class="mx-4 my-5 md:my-0"><a href="#about" class="text-xl hover:text-orange-600 duration-300">About</a></li>
+            <li class="mx-4 my-5 md:my-0"><a href="#contact" class="text-xl hover:text-orange-600 duration-300">Contact</a></li>
+            <!-- Changed -->
+            <button class="bg-orange-600 text-white font-bold duration-300 px-6 py-2 mx-4 hover:bg-orange-700 rounded">
+                Book Now
+            </button>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center" style="background-image: url('images/bg.jpg');">
+        <div class="bg-black bg-opacity-50">
+            <div class="container mx-auto px-6 py-24">
+                <h1 class="text-4xl md:text-6xl font-bold text-white text-center mt-4">Your Next <span class="text-orange-500">Adventure</span> Awaits</h1>
+                <div class="text-center my-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">Ready to Explore the World?</h2>
+                    <p class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">
+        Your next great story is waiting to be written among Sri Lanka's most stunning landscapes. Whether you seek inspiration from our curated trips or wish to design a unique journey, your adventure begins here.
+    </p>
+    
+                    <!-- Changed -->
+                    <button class="bg-orange-600 text-white font-bold duration-300 px-8 py-3 rounded hover:bg-orange-700 m-2"><a href="#destinations" >DESTINATIONS</a></button>
+                    <!-- Changed -->
+                    <button class="bg-white text-orange-700 font-bold duration-300 px-8 py-3 rounded hover:bg-gray-200 m-2">PLAN MY TRIP</button>
+                </div>
+                
+                <div class="flex justify-center items-center flex-col mt-12">
+                    <div class="flex">
+                        <!-- Changed -->
+                        <ion-icon name="star-sharp" class="text-amber-400 text-2xl p-1"></ion-icon>
+                        <ion-icon name="star-sharp" class="text-amber-400 text-2xl p-1"></ion-icon>
+                        <ion-icon name="star-sharp" class="text-amber-400 text-2xl p-1"></ion-icon>
+                        <ion-icon name="star-sharp" class="text-amber-400 text-2xl p-1"></ion-icon>
+                        <ion-icon name="star-half-sharp" class="text-amber-400 text-2xl p-1"></ion-icon>
+                    </div>
+                    <!-- Changed -->
+                    <p class="text-white mt-2">Based on 1,500+ reviews on <a href="#" class="text-amber-400 font-semibold hover:underline">TravelAdvisor</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-stone-100 py-20" id="destinations">
+    <div class="container mx-auto px-6">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">Explore Our Top Destinations</h2>
+            <p class="text-gray-600 mt-2">Hand-picked journeys to the world's most breathtaking landscapes.</p>
+        </div>
+
+        <!-- Responsive Grid for Destination Cards -->
+        <!-- On mobile (default): 1 column. On medium screens and up (md): 3 columns. -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Destination Card 1: The Canyon -->
+            <a href="#" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl">
+                <img class="w-full h-56 object-cover" src="images/image1.jpg" alt="A sweeping view of a red rock canyon.">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Mirissa & The Southern Coast</h3>
+                    <p class="text-gray-600 mt-2">Relax on golden sands, watch for blue whales, and capture the iconic sunset at Coconut Tree Hill.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="font-semibold text-orange-600">View Trip</span>
+                        <ion-icon name="arrow-forward-outline" class="ml-2 text-orange-600"></ion-icon>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Destination Card 2: The Jungle -->
+            <a href="#" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl">
+                <img class="w-full h-56 object-cover" src="images/image2.jpg" alt="A lush, green jungle with a hanging bridge.">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ella's Majestic Highlands</h3>
+                    <p class="text-gray-600 mt-2">Discover vibrant wildlife and hidden waterfalls in the heart of the jungle canopy.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="font-semibold text-orange-600">View Trip</span>
+                        <ion-icon name="arrow-forward-outline" class="ml-2 text-orange-600"></ion-icon>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Destination Card 3: The Mountains -->
+            <a href="#" class="block bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl">
+                <img class="w-full h-56 object-cover" src="images/image3.jpg" alt="Snow-capped mountain peaks of the Himalayas at sunrise.">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Sinharaja Rainforest Trek</h3>
+                    <p class="text-gray-600 mt-2">Challenge yourself with a trek to the base camp of the world's most iconic mountains.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="font-semibold text-orange-600">View Trip</span>
+                        <ion-icon name="arrow-forward-outline" class="ml-2 text-orange-600"></ion-icon>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    </section>
+    <!-- ======================================================= -->
+<!-- ================= ABOUT US SECTION ================== -->
+<!-- ======================================================= -->
+<section id="about" class="bg-white py-20">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Image Column -->
+            <div>
+                <img src="images/aboutus.jpg" alt="A group of happy hikers on a trail" class="rounded-lg shadow-xl w-full">
+            </div>
+
+            <!-- Text Column -->
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Crafting Unforgettable Journeys</h2>
+                <p class="text-gray-600 mb-6">
+                    Our mission is to connect people with the raw beauty of Sri Lanka, one adventure at a time. TrekWise was born from a passion for exploration and a deep respect for nature. We're a team of local experts dedicated to creating authentic, safe, and sustainable travel experiences.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <ion-icon name="heart-outline" class="text-orange-600 text-3xl mr-4 flex-shrink-0"></ion-icon>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Passionate Local Experts</h3>
+                            <p class="text-gray-600">Our guides are your key to unlocking the island's hidden secrets.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <ion-icon name="leaf-outline" class="text-orange-600 text-3xl mr-4 flex-shrink-0"></ion-icon>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Sustainable Travel</h3>
+                            <p class="text-gray-600">We're committed to protecting the environments we explore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- ================= CONTACT SECTION =================== -->
+<!-- ======================================================= -->
+<section id="contact" class="bg-stone-100 py-20">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">Get In Touch</h2>
+            <p class="text-gray-600 mt-2">Have a question or ready to plan your trip? We're here to help!</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <form action="#" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 bg-stone-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 bg-stone-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" class="w-full p-3 bg-stone-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Inquiry about Hiking Trips" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 bg-stone-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Tell us more about your travel plans..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-orange-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-700 transition-all duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- ===================== FOOTER ======================== -->
+<!-- ======================================================= -->
+<footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-6 py-12">
+        
+        <!-- Footer Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Column 1: Brand & Mission -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Travel<span class="text-orange-500">Bug</span></h3>
+                <p class="text-gray-400">
+                    Crafting unforgettable journeys in the heart of Sri Lanka. Your adventure starts with us.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors" aria-label="Instagram">
+                        <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors" aria-label="Facebook">
+                        <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors" aria-label="Twitter">
+                        <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Home</a></li>
+                    <li><a href="#destinations" class="text-gray-400 hover:text-orange-500 transition-colors">Destinations</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-orange-500 transition-colors">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-orange-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Our Trips -->
+            <div>
+                <h4 class="text-lg font-semibold text-white">Our Trips</h4>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Coastal Adventures</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Highland Hiking</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Rainforest Treks</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Custom Tours</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div>
+                <h4 class="text-lg font-semibold text-white">Contact Us</h4>
+                <ul class="mt-4 space-y-3 text-gray-400">
+                    <li class="flex items-start">
+                        <ion-icon name="location-outline" class="text-orange-500 mr-3 mt-1 flex-shrink-0"></ion-icon>
+                        <span>No.123 Adventure Lane, Colombo, Sri Lanka</span>
+                    </li>
+                    <li class="flex items-center">
+                        <ion-icon name="mail-outline" class="text-orange-500 mr-3"></ion-icon>
+                        <a href="mailto:hello@lankatrails.com" class="hover:text-orange-500 transition-colors">hello@travelbug.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <ion-icon name="call-outline" class="text-orange-500 mr-3"></ion-icon>
+                        <a href="tel:+94112345678" class="hover:text-orange-500 transition-colors">+94 11 234 5678</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="mt-12 border-t border-gray-700 pt-8 text-center">
+            <p class="text-gray-500">© 2025 Travel Bug. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        function sidebar(e) {
+            let list = document.querySelector('nav ul'); // More specific selector
+            if (e.name === 'menu-outline') {
+                e.name = "close-outline";
+                list.classList.add('top-[80px]');
+                list.classList.add('opacity-100');
+            } else {
+                e.name = "menu-outline";
+                list.classList.remove('top-[80px]');
+                list.classList.remove('opacity-100');
+            }
+        }
+    </script>
+</body>
+</html>
